@@ -1,0 +1,90 @@
+/* Set background and center content */
+body {
+    margin: 0;
+    padding: 0;
+    background: #173b00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading with animation */
+.title {
+    color: goldenrod;
+    font-size: 3rem;
+    padding: 15px 40px;
+    border: 3px solid goldenrod;
+    border-radius: 20px;
+    text-align: center;
+
+    text-shadow: 0 0 10px #000000f9, 0 0 20px #FAFAD2;
+    box-shadow:
+        0 0 10px goldenrod,
+        0 0 30px #010100;
+
+    animation: glow 2s ease-in-out infinite alternate;
+    transition: all 0.5s ease;
+}
+
+/* .title:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px #00ffee,
+        0 0 40px #00ffee,
+        0 0 60px rgba(0, 255, 255, 0.7);
+} */
+
+
+/* Container for images */
+.container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Image styling */
+
+
+.container img {
+    width: 200px; /* fits 3:4 ratio better */
+    height: 266px; /* 3:4 ratio */
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, width 0.5s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.container img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.6);
+}
+
+
+.container img {
+    width: 200px;
+    height: 266px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid goldenrod;
+
+    box-shadow:
+        0 0 10px #FAFAD2,
+        0 0 20px goldenrod,
+        0 0 30px rgba(218, 165, 32, 0.5); /* RGBA */
+
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+.container img:hover {
+    transform: scale(1.2);
+    box-shadow:
+        0 0 30px goldenrod,
+        0 0 60px #FAFAD2;
+}
